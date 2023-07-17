@@ -1,0 +1,223 @@
+/*
+-----colores
+header: #a0d5b6
+section: #798aa1
+h1: #dcebdd
+h2: #ad9a27
+footer: #304345
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*neutralidad*/
+html, 
+body, 
+h1, 
+h2, 
+h3, 
+section, 
+article,
+p,  
+aside, 
+footer, 
+nav{
+    margin: 0;
+    padding: 0;
+}
+
+/*opcional: está por defecto para que sean tipo bloque (para navegadores antiguos)*/
+header{
+    display: block;
+}
+/**---------------------------------------*/
+
+
+/*estructura*/
+body{
+    width: 85%;
+    margin: 0 auto;
+    background-color: rgb(240, 225, 225);
+}
+
+header{
+    height: 90px;
+    background-color: #a0d5b6;                 
+}
+
+section{
+    /*height: 520px;*/
+    height: 490px;
+    background-color: #798aa1;
+}
+
+article{
+    width: 60%;
+    float: left;
+    margin-left: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9em;
+    /*bg de referencia
+    background-color: rgb(206, 178, 102);*/
+}
+
+aside{
+    width: 34%;
+    float: right;
+    margin-right: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    /*bg de referencia
+    background-color: rgb(170, 144, 73);*/
+}
+
+footer{
+    height: 70px;
+    background-color: #304345;
+}
+
+nav{
+    font-size: .7em;
+    color: #ad9a27;
+    text-align: center;
+    padding: 0.5em;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: #ad9a27;
+}
+
+
+/*estilos*/
+h1{
+    text-align: center;
+    color: #dcebdd;
+    padding-top: 10px;
+}
+
+h2{
+    text-align: center;
+    color: #ad9a27;
+    padding-top: 3px;
+}
+
+h3{
+    clear: both;
+    text-align: center;
+    color: #ad9a27;
+    font-size: .8em;
+}
+
+p{
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: justify;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #dcebdd;
+}
+
+ul li{
+    display: inline;
+}
+
+/*Clases*/
+.izq{
+    float: left;
+    margin-right: 1em;
+}
+
+.der{
+    float: right;
+    margin-left: 1em;
+}
+
+
+/*Responsive (media query)*/
+/*teléfonos celulares*/
+@media only screen and (max-width: 460px) {
+    body{
+        width: 90%;
+        height: auto;
+        /*background-color: rgb(142, 108, 173);*/
+    }
+    section{
+        height: 1000px;
+    }
+    article, aside{
+        width: 90%;
+        height: auto;
+        clear: both;
+    }
+    p{
+        font-size: 0.9em;
+    }
+    h1{
+        font-size: 1.1em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    h3{
+        font-size: 0.8em;
+        padding: 0;
+    }
+    header{
+        height: 60px;
+    }
+    img{
+        width: 70%;
+        height: 140px;
+    }
+}
+
+/*tabletas*/
+@media only screen and (min-width: 461px) and (max-width: 768px) {
+    body{
+        width: 90%;
+        height: auto;
+        /*background-color: rgb(78, 76, 167);*/
+    }
+    section{
+        height: 1025px;
+    }
+    article, aside{
+        width: 90%;
+        height: auto;
+        clear: both;
+    }
+    p{
+        font-size: 1em;
+    }
+    h1{
+        font-size: 1.1em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    h3{
+        font-size: 0.9em;
+        padding: 0;
+    }
+    header{
+        height: 60px;
+    }
+}
+
+/**/
+@media only screen and (min-width: 769px){
+    body{
+        width: 85%;
+        height:0 auto;
+        /*background-color: rgb(76, 141, 167);*/
+    }
+    section{
+        height: 800px;
+    }
+}
+
+

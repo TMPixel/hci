@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flotamiento Cajas</title>
+    <style>
+        div{
+            background-color: rgb(214, 158, 112);
+            padding: 10px;
+            margin: 5px;
+            /*border: 1px solid gray;*/
+            width: 200px;
+        }
+        #uno{
+            float: left;
+        }
+        #dos{
+            float: right;
+        }
+        #tres{
+            /*float: right;*/
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        div*3{aaaaa}
+        div#id1
+        div#id1.class1
+        div#uno*3{caja $}
+        ul>li*5>a{salu3}
+    -->
+    <div id="uno">caja 1</div>
+    <div id="dos">caja 2</div>
+    <div id="tres">caja 3</div>
+    
+    
+
+</body>
+</html>

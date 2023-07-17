@@ -1,0 +1,32 @@
+.contenedor{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+
+    /* - alinear horizontalmente
+    justify-items: start;
+    justify-items: auto;
+    justify-items: center;
+    justify-items: end;
+    justify-items: stretch;
+    */
+
+    justify-items: center;
+
+    /* - alinear verticalmente
+    align-items: start;
+    align-items: end;
+    align-items: center;
+    align-items: safe;
+    */
+    align-items: center;
+
+}
+
+.contenedor .item{
+    background-color: rgb(224, 150, 89);
+    /*self: para el posicionamiento y  alineación de la celda*/
+    justify-self: stretch;
+    align-self: self-end;
+}
